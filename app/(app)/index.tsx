@@ -1,16 +1,21 @@
 import {Image} from "expo-image";
-import { Text, View, StyleSheet, TextInput, Button, TouchableOpacity,  } from "react-native";
+import { Text, View, StyleSheet, TextInput,} from "react-native";
+import Button from "../../components/Button";
+import { colors,typography } from "@/styles";
 
 export default function Index() {
   return (
     <View style={styles.container}>
-      <Text>Logo Placeholder</Text>
-      <Button
-        title="Continue with Google"
-        onPress={() => {
-          // Navigation logic to go to home screen
-        }}
+      <Image
+        source={require("../../assets/images/templogo.png")}
+        style={{ width: 100, height: 100, marginBottom: 20 }}
+        contentFit="contain"
+        transition={1000}
+        alt="Logo" 
       />
+      {/*
+      <Button title="Continue with Google" style={styles.button} />
+      */}
       <TextInput
         style={styles.TextInput}
         placeholder="Email or Username"
@@ -21,46 +26,43 @@ export default function Index() {
         placeholder="Password"
         secureTextEntry
       />
-      <TouchableOpacity style={styles.button} onPress={() => { /* logic */ }}>
-        <Text style={styles.buttonText}>Login</Text>
-      </TouchableOpacity>
-      <Text>Or</Text>
-      <Button
-        title="Create account"
-        onPress={() => {
-          // Logic to navigate to sign up screen
-        }}
-      />
+      <View style={styles.buttonContainer}>
+        <Button title="Login" style={styles.button} />
+        <Text>Or</Text>
+        <Button title="Sign Up" style={styles.button} />
+      </View>
+      <Button title="Forgot Password?" style={styles.button} />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
+  buttonContainer: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginTop: 10,
+    width: "50%",
+  },
   container: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
   },
   text: {
-    fontSize: 16,
-    color: "#333",
+    fontSize: typography.text.fontSize,
+    color: colors.onBackground,
   },
   button: {
-    marginTop: 10,
-    padding: 10,
-    backgroundColor: "#007BFF",
-    borderRadius: 5,
-  },
-  buttonText: {
-    color: "#fff"
+    margin: 15,
   },
   TextInput: {
     height: 40,
-    borderColor: "#qe23d3",
+    borderColor: "#000000",
     borderWidth: 1,
-    marginBottom: 1,
-    paddingHorizontal: 10,
-    width: "80%",
+    margin: 10,
+    paddingHorizontal: 5,
+    width: "70%",
     borderRadius: 5
   },
 });
