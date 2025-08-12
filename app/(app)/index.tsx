@@ -7,8 +7,8 @@ export default function Index() {
   return (
     <View style={styles.container}>
       <Image
-        source={require("../../assets/images/templogo.png")}
-        style={{ width: 100, height: 100, marginBottom: 20 }}
+        source={require("../../assets/images/Logo.png")}
+        style={{ width: 200, height: 200, marginBottom: 20 }}
         contentFit="contain"
         transition={1000}
         alt="Logo" 
@@ -26,11 +26,11 @@ export default function Index() {
         placeholder="Password"
         secureTextEntry
       />
-      <View style={styles.buttonContainer}>
+      {/*<View style={styles.buttonContainer}>*/}
         <Button title="Login" style={styles.button} />
-        <Text>Or</Text>
+        <Text>———————— or ————————</Text>
         <Button title="Sign Up" style={styles.button} />
-      </View>
+      {/*</View>*/}
       <Button title="Forgot Password?" style={styles.button} />
     </View>
   );
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
     color: colors.onBackground,
   },
   button: {
-    margin: 15,
+    margin: 10,
   },
   TextInput: {
     height: 40,

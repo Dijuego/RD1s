@@ -25,11 +25,13 @@ export default function Button({ title, style, ...props }: ButtonProps) {
 const styles = StyleSheet.create({
   button: {
     backgroundColor: colors.primary,
-    paddingHorizontal: 10,
-    paddingVertical: 4,
+    paddingHorizontal: 8,
+    paddingVertical: 1,
     borderWidth: 1,
     borderColor: colors.onBackground,
-    borderRadius: 10,
+    borderRadius: 20,
+    width: "60%",
+    justifyContent: "center",
     alignItems: "center",
   } as ViewStyle,
   text: {
