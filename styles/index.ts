@@ -1,3 +1,3 @@
 // styles/index.ts
-export * from "./colors";
+export * from "./theme";
 export * from "./typography";
