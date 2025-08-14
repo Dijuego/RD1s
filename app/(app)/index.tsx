@@ -12,7 +12,7 @@ export default function Index() {
   return (
     <View >
       <Image
-        source={require("../../assets/images/Logo.png")}
+        source={require("../../assets/images/logo2Blk.svg")}
         style={{ width: 200, height: 200, marginBottom: 20 }}
         contentFit="contain"
         transition={1000}
