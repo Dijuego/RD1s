@@ -1,12 +1,12 @@
 export const typography = {
   button: {
     fontSize: 14,
-    fontWeight: '500',
+    fontWeight: 'Bold',
     lineHeight: 32,
   },
   text:{
     fontSize: 14,
-    fontWeight: 'normal',
+    fontWeight: 'bold',
     lineHeight: 24,
   }
 };

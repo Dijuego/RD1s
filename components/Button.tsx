@@ -1,8 +1,9 @@
-import { Pressable, Text, StyleSheet, PressableProps, ViewStyle } from "react-native";
-import {typography} from "../styles";
-import  useThemeStore  from "../store/themeStore";
 import React from "react";
-import { lightTheme, darkTheme } from "../styles/theme";
+import { Pressable, PressableProps, StyleSheet, ViewStyle } from "react-native";
+import useThemeStore from "../store/themeStore";
+import { typography } from "../styles";
+import { darkTheme, lightTheme } from "../styles/theme";
+import Text from "./Text";
 
 type ButtonProps = PressableProps & {
   title: string;
@@ -30,7 +31,7 @@ export default function Button({ title, style, ...props }: ButtonProps) {
   text: {
     color: colors.onPrimary,
     fontSize: typography.button.fontSize,
-    fontWeight: '400',
+    fontWeight: 'bold',
     lineHeight: typography.button.lineHeight,
   },
   });

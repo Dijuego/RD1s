@@ -1,10 +1,10 @@
-import {Image} from "expo-image";
-import { StyleSheet, TextInput, useColorScheme} from "react-native";
+import Text from "@/components/Text";
+import View from "@/components/View";
+import { typography } from "@/styles";
+import { Image } from "expo-image";
+import { StyleSheet } from "react-native";
 import Button from "../../components/Button";
 import ThemedTextInput from "../../components/textInput";
-import View from "@/components/View";
-import Text from "@/components/Text";
-import {darkTheme,typography } from "@/styles";
 
 export default function Index() {
 
@@ -12,8 +12,8 @@ export default function Index() {
   return (
     <View >
       <Image
-        source={require("../../assets/images/logo2Blk.svg")}
-        style={{ width: 200, height: 200, marginBottom: 20 }}
+        source={require("../../assets/images/Logo.svg")}
+        style={{ width: 300, height: 300, marginBottom: 0 }}
         contentFit="contain"
         transition={1000}
         alt="Logo" 

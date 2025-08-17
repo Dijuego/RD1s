@@ -1,7 +1,7 @@
 import React from "react";
-import { Text as RNText, TextProps, StyleSheet } from "react-native";
+import { Text as RNText, StyleSheet, TextProps } from "react-native";
 import useThemeStore from "../store/themeStore";
-import { lightTheme, darkTheme } from "../styles/theme";
+import { darkTheme, lightTheme } from "../styles/theme";
 
 type Props = React.PropsWithChildren<TextProps>;
 

@@ -1,11 +1,10 @@
-import { useColorScheme } from 'react-native';
 
 
 export const lightTheme = {
-  primary: "#006fff",
+  primary: "#1e282dff",
   secondary: "#f8911b",
   background: "#ffffffff",
-  secondaryBackground: "#f0f0f0ff",
+  secondaryBackground: "#e4e4e4ff",
   error: "#f7254bff",
   onPrimary: "#ffffff",
   onSecondary: "#000000",
