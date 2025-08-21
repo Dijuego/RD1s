@@ -1,9 +1,9 @@
 import Text from "@/components/Text";
 import View from "@/components/View";
 import { typography } from "@/styles";
-import { Image } from "expo-image";
 import { StyleSheet } from "react-native";
 import Button from "../../components/Button";
+import Logo from "../../components/Logo";
 import ThemedTextInput from "../../components/textInput";
 
 export default function Index() {
@@ -11,6 +11,7 @@ export default function Index() {
 
   return (
     <View >
+      {/*
       <Image
         source={require("../../assets/images/Logo.svg")}
         style={{ width: 300, height: 300, marginBottom: 0 }}
@@ -18,6 +19,9 @@ export default function Index() {
         transition={1000}
         alt="Logo" 
       />
+      */}
+
+      <Logo />
       <ThemedTextInput
         style={styles.TextInput}
         placeholder="Email or Username"
@@ -60,7 +64,6 @@ const styles = StyleSheet.create({
   },
   TextInput: {
     height: 40,
-    borderColor: "#000000",
     borderWidth: 1,
     margin: 10,
     paddingHorizontal: 5,

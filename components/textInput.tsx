@@ -1,8 +1,8 @@
-import { StyleSheet, Text, TextInput } from "react-native";
-import { typography } from "../styles";
-import useThemeStore from "../store/themeStore";
-import { lightTheme, darkTheme } from "../styles/theme";
 import React from "react";
+import { StyleSheet, TextInput } from "react-native";
+import useThemeStore from "../store/themeStore";
+import { typography } from "../styles";
+import { darkTheme, lightTheme } from "../styles/theme";
 
 type TextInputProps = {
   style?: object;
@@ -16,12 +16,12 @@ export default function themedTextInput({style, placeholder,secureTextEntry, ...
 
     const styles = StyleSheet.create({
         TextInput: {
-            backgroundColor: colors.secondaryBackground,
+            backgroundColor: colors.background,
             color: colors.onBackground,
             padding: 10,
             borderRadius: 5,
             borderWidth: 1,
-            borderColor: colors.primary,
+            borderColor: colors.onBackground,
             fontSize: typography.text.fontSize,
         },
     });

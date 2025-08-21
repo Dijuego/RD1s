@@ -18,11 +18,11 @@ export default function Button({ title, style, ...props }: ButtonProps) {
 
   const styles = StyleSheet.create({
   button: {
-    backgroundColor: colors.primary,
+    backgroundColor: colors.secondary,
     paddingHorizontal: 8,
     paddingVertical: 1,
     borderWidth: 1,
-    borderColor: colors.primary,
+    borderColor: colors.onBackground,
     borderRadius: 20,
     width: "60%",
     justifyContent: "center",
