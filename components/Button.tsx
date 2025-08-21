@@ -29,7 +29,7 @@ export default function Button({ title, style, ...props }: ButtonProps) {
     alignItems: "center",
   } as ViewStyle,
   text: {
-    color: colors.onPrimary,
+    color: colors.primary,
     fontSize: typography.button.fontSize,
     fontWeight: 'bold',
     lineHeight: typography.button.lineHeight,
