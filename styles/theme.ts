@@ -2,7 +2,7 @@
 
 export const lightTheme = {
   primary: "#000000ff",
-  secondary: "#6db6ffff",
+  secondary: "#aad4feff",
   background: "#ffffffff",
   error: "#f7254bff",
   onPrimary: "#ffffff",
@@ -14,7 +14,7 @@ export const lightTheme = {
 export const darkTheme = {
   // DARK MODE
   primary: "#efefefff",
-  secondary: "#3160faff",
+  secondary: "#0e2d94ff",
   background: "#000000ff",
   error: "#f7254bff",
   onPrimary: "#000000",
